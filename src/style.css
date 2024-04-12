@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(21, 21, 23);
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-content {
+    background: rgb(32, 32, 34);
+    height: 50%;
+    width: 25%;
+    box-shadow: 0 40pt 50pt 0 rgba(0, 0, 0, .35);
+    border-radius: 8px;
+    backdrop-filter: saturate(180%) blur(20px);
+    margin: 24px;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.profile-content:hover {
+    height: 75%;
+    width: 30%;
+}
+
+.twitter-bg {
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgb(32, 32, 34);
+    background-image: url(./posts/95261215-16da-42be-8104-ad1d0f99db79.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.telegram-bg {
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgb(32, 32, 34);
+    background-image: url(./posts/c3b75b41-2b25-41f2-9bd5-9711cfe55766.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.avatar-content {
+    position: absolute;
+    background: rgb(1, 127, 221);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    border-radius: 8px;
+}
+
+.avatar-content .avatar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-content .title {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bio-content .title h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 0 30pt #000;
+}
+
+.bio-content .title h2 {
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bio-content .title p {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 20pt #000;
+}
+
+.bio-content .title .seperator {
+    margin: 6px;
+    color: #bdbdbd;
+    font-size: 16px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.account-links {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    user-select: none;
+    color: #fff;
+}
